@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursor Pro 怎么订阅？国内开发者虚拟卡绑卡与支付教程 - AIPayCards</title>
+  <meta name="description" content="详细演示国内开发者如何使用 AIPayCards 爱付卡订阅 Cursor Pro，包含开卡场景选择、余额缓冲预留、账单地址填写及支付失败排查。" />
+  <meta name="keywords" content="Cursor Pro订阅, Cursor绑卡失败, Cursor支付教程, 虚拟信用卡, AIPayCards" />
+  <link rel="canonical" href="https://aipaycards.github.io/cursor-pro-payment.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://aipaycards.github.io/cursor-pro-payment.html" />
+  <meta property="og:title" content="Cursor Pro 怎么订阅？国内开发者虚拟卡绑卡与支付教程" />
+  <meta property="og:description" content="使用 AIPayCards 分场景开卡，轻松完成 Cursor Pro 绑卡订阅与自动续费。" />
+  <style>
+    :root { --bg:#0b0f19; --card:#111827; --border:#1f2937; --primary:#3b82f6; --text:#f9fafb; --muted:#9ca3af; --accent:#10b981; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:radial-gradient(circle at top,#1e293b 0%,var(--bg) 60%); color:var(--text); line-height:1.7; min-height:100vh; }
+    .container { max-width:840px; margin:0 auto; padding:36px 24px 64px; }
+    nav { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:32px; font-size:0.9rem; }
+    nav a { color:#93c5fd; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    h1 { font-size:2rem; font-weight:800; margin-bottom:14px; }
+    .lead { color:var(--muted); font-size:1.05rem; margin-bottom:28px; }
+    .box { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:24px; margin-bottom:20px; }
+    .box h2 { font-size:1.2rem; margin-bottom:12px; color:#fff; }
+    .box ol, .box ul { padding-left:20px; color:var(--muted); }
+    .box li { margin-bottom:8px; }
+    .box strong { color:#e5e7eb; }
+    .cta { text-align:center; margin:36px 0 12px; }
+    .btn { display:inline-block; background:var(--primary); color:#fff; padding:14px 28px; border-radius:10px; font-weight:600; text-decoration:none; }
+    footer { text-align:center; color:var(--muted); font-size:0.875rem; margin-top:48px; padding-top:20px; border-top:1px solid var(--border); }
+    footer a { color:#60a5fa; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="/">← 返回首页</a>
+      <a href="/cursor-pro-payment.html">Cursor Pro 教程</a>
+      <a href="/claude-pro-payment.html">Claude 订阅指南</a>
+      <a href="/chatgpt-plus-payment.html">ChatGPT Plus 教程</a>
+    </nav>
+    <h1>Cursor Pro 国内订阅与虚拟卡绑卡实操教程</h1>
+    <p class="lead">Cursor 仅支持海外信用卡/Stripe 渠道扣费，国内双币卡常因发卡行限制被拒。通过 AIPayCards（爱付卡）专用 AI 订阅卡即可快速完成开通与续费。</p>
+
+    <div class="box">
+      <h2>🛠️ 实操步骤</h2>
+      <ol>
+        <li><strong>注册与充值</strong>：登录 <a href="https://aipaycards.com/" style="color:#60a5fa;">AIPayCards 官网</a>，通过官网费用计算器核算所需金额（建议额外预留 <strong>$2.00 余额安全缓冲</strong>），选择 USDT 或支付宝/微信充值。</li>
+        <li><strong>按场景开卡</strong>：在控制台选择 <strong>AI 订阅 / 开发者服务</strong> 对应场景开卡（开卡费 $2.00 起），获取美国发卡渠道虚拟卡的卡号、有效期、CVV 及账单地址。</li>
+        <li><strong>绑定 Cursor Pro</strong>：打开 Cursor 官网 Billing 页面，输入虚拟卡信息与控制台提供的对应账单地址即可完成升级。</li>
+      </ol>
+    </div>
+
+    <div class="box">
+      <h2>💡 避坑与排障提示</h2>
+      <ul>
+        <li><strong>账单地址保持一致</strong>：填写 Stripe 支付表单时，务必使用控制台分配的对应邮编与账单地址，避免地址不匹配触发风控。</li>
+        <li><strong>扣费失败快速排查</strong>：若遇到偶发拒付，可在 AIPayCards 控制台的交易记录中查看授权/拒付详情，并直接从该笔交易上下文提交工单排查。</li>
+      </ul>
+    </div>
+
+    <div class="cta">
+      <a href="https://aipaycards.com/" class="btn" target="_blank" rel="noopener">前往 AIPayCards 开卡订阅 Cursor Pro →</a>
+    </div>
+    <footer>
+      <p>官方网站：<a href="https://aipaycards.com/" target="_blank" rel="noopener">https://aipaycards.com/</a> · <a href="/">返回 AIPayCards 指南首页</a></p>
+    </footer>
+  </div>
+</body>
+</html>

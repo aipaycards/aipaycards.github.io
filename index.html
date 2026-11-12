@@ -8,7 +8,6 @@
   <meta name="keywords" content="AIPayCards, 爱付卡, 虚拟信用卡, ChatGPT充值, Claude订阅, Cursor支付, OpenAI API绑卡, 海外SaaS支付" />
   <link rel="canonical" href="https://aipaycards.github.io/" />
 
-  <!-- Open Graph / 社交分享卡片 -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aipaycards.github.io/" />
   <meta property="og:site_name" content="AIPayCards 爱付卡" />
@@ -16,12 +15,10 @@
   <meta property="og:title" content="AIPayCards 爱付卡 — 面向 AI 与开发者的海外支付虚拟卡" />
   <meta property="og:description" content="用一张可控的线上虚拟卡，轻松搞定 ChatGPT Plus、Claude、Cursor、OpenAI API 与海外 SaaS 订阅支付，支持 USDT 与支付宝/微信充值。" />
 
-  <!-- Twitter / X 卡片 -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="AIPayCards 爱付卡 — 海外 AI 与开发者工具订阅虚拟卡" />
   <meta name="twitter:description" content="轻松完成 ChatGPT、Claude、Cursor、OpenAI API 绑卡验证与自动续费，支持分场景开卡与实时账单追踪。" />
 
-  <!-- 结构化数据 (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -84,9 +81,15 @@
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: border-color 0.2s, transform 0.2s;
     }
+    a.card:hover { border-color: var(--primary); transform: translateY(-2px); }
     .card h3 { font-size: 1.15rem; margin-bottom: 10px; color: #fff; }
     .card p { color: var(--muted); font-size: 0.95rem; }
+    .section-title { font-size: 1.35rem; font-weight: 700; margin: 52px 0 8px; text-align: center; }
     .tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 36px 0; }
     .tag {
       background: rgba(16, 185, 129, 0.12);
@@ -134,6 +137,22 @@
         <h3>🔍 实时账单与上下文排障</h3>
         <p>控制台随时查看授权、清算、退款与长周期续费提醒；遇到支付被拒可直接从交易记录提交排查，并提供团队批量发卡 API。</p>
       </div>
+    </section>
+
+    <h2 class="section-title">📖 热门平台绑卡实操指南</h2>
+    <section class="grid">
+      <a class="card" href="/cursor-pro-payment.html">
+        <h3>⚡ Cursor Pro 绑卡订阅教程</h3>
+        <p>解决国内卡 Stripe 拒付问题，附账单地址填写要点与安全缓冲建议 →</p>
+      </a>
+      <a class="card" href="/claude-pro-payment.html">
+        <h3>🧠 Claude Pro 防风控支付指南</h3>
+        <p>开卡前状态确认、AI 专用卡段选择与 Apple Pay 辅助绑卡方案 →</p>
+      </a>
+      <a class="card" href="/chatgpt-plus-payment.html">
+        <h3>🤖 ChatGPT Plus 与 API 充值</h3>
+        <p>订阅卡与 API 结算卡隔离管理，轻松控制额度上限与流水追踪 →</p>
+      </a>
     </section>
 
     <footer>

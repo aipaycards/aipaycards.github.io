@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude Pro 订阅支付与防风控拒付指南 - AIPayCards</title>
+  <meta name="description" content="解决 Claude Pro 订阅绑卡被拒与风控问题，介绍 AIPayCards 爱付卡开卡前状态确认、Apple Pay 绑定与长周期账单管理方法。" />
+  <meta name="keywords" content="Claude Pro订阅, Claude绑卡被拒, Claude虚拟卡, Claude支付教程, AIPayCards" />
+  <link rel="canonical" href="https://aipaycards.github.io/claude-pro-payment.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://aipaycards.github.io/claude-pro-payment.html" />
+  <meta property="og:title" content="Claude Pro 订阅支付与防风控拒付指南 - AIPayCards" />
+  <meta property="og:description" content="开卡前先查官网最新支持状态，了解 Claude 订阅绑卡与 Apple Pay 支付要点。" />
+  <style>
+    :root { --bg:#0b0f19; --card:#111827; --border:#1f2937; --primary:#3b82f6; --text:#f9fafb; --muted:#9ca3af; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:radial-gradient(circle at top,#1e293b 0%,var(--bg) 60%); color:var(--text); line-height:1.7; min-height:100vh; }
+    .container { max-width:840px; margin:0 auto; padding:36px 24px 64px; }
+    nav { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:32px; font-size:0.9rem; }
+    nav a { color:#93c5fd; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    h1 { font-size:2rem; font-weight:800; margin-bottom:14px; }
+    .lead { color:var(--muted); font-size:1.05rem; margin-bottom:28px; }
+    .box { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:24px; margin-bottom:20px; }
+    .box h2 { font-size:1.2rem; margin-bottom:12px; color:#fff; }
+    .box ol, .box ul { padding-left:20px; color:var(--muted); }
+    .box li { margin-bottom:8px; }
+    .box strong { color:#e5e7eb; }
+    .cta { text-align:center; margin:36px 0 12px; }
+    .btn { display:inline-block; background:var(--primary); color:#fff; padding:14px 28px; border-radius:10px; font-weight:600; text-decoration:none; }
+    footer { text-align:center; color:var(--muted); font-size:0.875rem; margin-top:48px; padding-top:20px; border-top:1px solid var(--border); }
+    footer a { color:#60a5fa; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="/">← 返回首页</a>
+      <a href="/cursor-pro-payment.html">Cursor Pro 教程</a>
+      <a href="/claude-pro-payment.html">Claude 订阅指南</a>
+      <a href="/chatgpt-plus-payment.html">ChatGPT Plus 教程</a>
+    </nav>
+    <h1>Claude Pro 订阅支付与防风控拒付指南</h1>
+    <p class="lead">Anthropic 对支付渠道与 IP 环境风控较为严格。使用 AIPayCards（爱付卡）时，掌握以下几个关键操作可以显著提高绑卡成功率。</p>
+
+    <div class="box">
+      <h2>📌 订阅前必看注意事项</h2>
+      <ol>
+        <li><strong>先查实时支持状态</strong>：Claude 支付通道偶有波动，开卡前请先在 <a href="https://aipaycards.com/" style="color:#60a5fa;">AIPayCards 官网</a> 查看最新的平台支持状态公告。</li>
+        <li><strong>选择专用 AI 订阅卡段</strong>：在控制台按 AI 订阅场景开卡，确保卡片用途单一，避免混合其他高风险消费记录影响账号权重。</li>
+        <li><strong>预留充足余额</strong>：使用官网费用计算器预估月费及手续费，并保留至少 <strong>$2.00 安全缓冲</strong>，防止预授权验证因余额不足失败。</li>
+      </ol>
+    </div>
+
+    <div class="box">
+      <h2>🍏 替代方案与售后排障</h2>
+      <ul>
+        <li><strong>绑定 Apple Pay 支付</strong>：AIPayCards 支持绑定 Apple Pay，若网页端直接绑卡触发风控，可尝试通过 iOS 端内购流程配合绑定完成订阅。</li>
+        <li><strong>长周期账单与工单</strong>：控制台支持查看授权、清算、退款与长周期续费提醒；如遇扣费异常，直接从交易上下文提交工单即可优先处理。</li>
+      </ul>
+    </div>
+
+    <div class="cta">
+      <a href="https://aipaycards.com/" class="btn" target="_blank" rel="noopener">查看官网 Claude 最新支持状态并开卡 →</a>
+    </div>
+    <footer>
+      <p>官方网站：<a href="https://aipaycards.com/" target="_blank" rel="noopener">https://aipaycards.com/</a> · <a href="/">返回 AIPayCards 指南首页</a></p>
+    </footer>
+  </div>
+</body>
+</html>
