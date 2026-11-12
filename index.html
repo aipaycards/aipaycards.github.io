@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIPayCards 爱付卡 — 海外 AI 与开发者工具订阅虚拟卡</title>
+  <meta name="description" content="AIPayCards (aipaycards.com) 专为开发者与 AI 用户打造，轻松搞定 ChatGPT、Claude、Cursor、OpenAI API、Gemini 等海外服务订阅与绑卡支付。" />
+  <meta name="keywords" content="AIPayCards, 爱付卡, 虚拟信用卡, ChatGPT充值, Claude订阅, Cursor支付, OpenAI API绑卡, 海外SaaS支付" />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --border: #1f2937;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --text: #f9fafb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 60%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 48px 24px; }
+    header { text-align: center; padding: 40px 0 56px; }
+    .badge {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); font-size: 1.15rem; max-width: 640px; margin: 0 auto 32px; }
+    .cta-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4); }
+    .btn-primary:hover { background: var(--primary-hover); transform: translateY(-2px); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 24px; }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .card h3 { font-size: 1.15rem; margin-bottom: 10px; color: #fff; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 36px 0; }
+    .tag {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    footer { text-align: center; color: var(--muted); font-size: 0.875rem; margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); }
+    footer a { color: #60a5fa; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">💳 面向 AI 与开发者的海外支付虚拟卡</span>
+      <h1>AI 工具选好了，别卡在付款这一步</h1>
+      <p class="subtitle">
+        AIPayCards（爱付卡）为你提供稳定、可控的美国发卡渠道虚拟卡，一站式搞定主流海外 AI 订阅、API 绑卡验证与自动续费。
+      </p>
+      <div class="cta-group">
+        <a href="https://aipaycards.com/" class="btn btn-primary" target="_blank" rel="noopener">立即前往 AIPayCards 官网开卡 →</a>
+      </div>
+      <div class="tags">
+        <span class="tag">✓ ChatGPT Plus / Pro</span>
+        <span class="tag">✓ Claude 订阅</span>
+        <span class="tag">✓ Cursor Pro</span>
+        <span class="tag">✓ OpenAI API</span>
+        <span class="tag">✓ Gemini / GitHub</span>
+        <span class="tag">✓ Apple Pay 绑定</span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h3>🎯 分场景独立开卡</h3>
+        <p>支持按 AI 订阅、API 接口扣费、海外 SaaS 等场景分别开卡，开卡费 $2.00 起，内置官网费用计算器，账单清晰可控。</p>
+      </div>
+      <div class="card">
+        <h3>⚡ USDT 与支付宝/微信充值</h3>
+        <p>支持 USDT 固定收款地址快速入账，同时提供支付宝与微信充值渠道，配有完整中文教程与工单客服支持。</p>
+      </div>
+      <div class="card">
+        <h3>🔍 实时账单与上下文排障</h3>
+        <p>控制台随时查看授权、清算、退款与长周期续费提醒；遇到支付被拒可直接从交易记录提交排查，并提供团队批量发卡 API。</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>官方网站：<a href="https://aipaycards.com/" target="_blank" rel="noopener">https://aipaycards.com/</a> · GitHub：<a href="https://github.com/aipaycards" target="_blank" rel="noopener">AIPayCards</a></p>
+    </footer>
+  </div>
+</body>
+</html>
